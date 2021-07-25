@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="BreathingIssue <= 0.5\nentropy = 0.94\nsamples = 614\nvalue = [395, 219]"] ;
+1 [label="ThroatInfections <= 0.5\nentropy = 0.962\nsamples = 397\nvalue = [244, 153]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Fever <= 0.5\nentropy = 0.971\nsamples = 140\nvalue = [84, 56]"] ;
+1 -> 2 ;
+3 [label="entropy = 0.981\nsamples = 43\nvalue = [25, 18]"] ;
+2 -> 3 ;
+4 [label="entropy = 0.966\nsamples = 97\nvalue = [59, 38]"] ;
+2 -> 4 ;
+5 [label="Fever <= 0.5\nentropy = 0.956\nsamples = 257\nvalue = [160, 97]"] ;
+1 -> 5 ;
+6 [label="entropy = 0.961\nsamples = 112\nvalue = [69, 43]"] ;
+5 -> 6 ;
+7 [label="entropy = 0.953\nsamples = 145\nvalue = [91, 54]"] ;
+5 -> 7 ;
+8 [label="Fever <= 0.5\nentropy = 0.886\nsamples = 217\nvalue = [151, 66]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="ThroatInfections <= 0.5\nentropy = 0.866\nsamples = 66\nvalue = [47, 19]"] ;
+8 -> 9 ;
+10 [label="entropy = 0.918\nsamples = 18\nvalue = [12, 6]"] ;
+9 -> 10 ;
+11 [label="entropy = 0.843\nsamples = 48\nvalue = [35, 13]"] ;
+9 -> 11 ;
+12 [label="ThroatInfections <= 0.5\nentropy = 0.895\nsamples = 151\nvalue = [104, 47]"] ;
+8 -> 12 ;
+13 [label="entropy = 0.856\nsamples = 57\nvalue = [41, 16]"] ;
+12 -> 13 ;
+14 [label="entropy = 0.915\nsamples = 94\nvalue = [63, 31]"] ;
+12 -> 14 ;
+}
